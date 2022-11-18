@@ -1,7 +1,5 @@
 # todo_board/item.rb
 
-require 'date'
-
 class Item
 
     def self.valid_date?(date_str)
@@ -14,7 +12,19 @@ class Item
 
     end
 
-    attr_accessor :title, :deadline, :description
+    attr_accessor :title, :description
+    attr_reader :deadline
+
+    def deadline=(deadline)
+
+        if Item.valid_date?(deadline)
+            @deadline = deadline
+        else
+            raise RuntimeError.new("Not a valid date!")
+        end
+
+    end
+        
 
     def initialize(title, deadline, description)
 

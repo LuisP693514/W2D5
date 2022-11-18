@@ -1,0 +1,67 @@
+body {
+    font-family: "Arial, sans-serif";
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+ul.ingredients-list {
+    list-style: square;
+}
+
+header > img {
+    width: 100px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(90, 0, 174);
+}
+
+body {
+    background-color:rgba(116, 255, 213, 0.452)
+}
+
+#reviews input{
+
+    cursor: pointer;
+    outline: none;
+    
+}
+
+#review-form:last-child:hover{
+    background-color: rgb(34, 163, 167);
+}
+
+ol > li#a12 {
+    background-color: rgb(0, 173, 136);
+}
+
+.user_review + div {
+
+    border-top: 100px;
+    border-top-style: solid;
+    border-top-color: black;
+
+}
+
+input[type='radio']{
+
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(./stars.png);
+    vertical-align: bottom;
+
+}
+input[type='radio']:hover{
+    background-position: 30px 60px;
+}
+input[type='radio']:checked{
+    background-position: 30px 30px;
+}
